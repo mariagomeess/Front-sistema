@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Professor(a)</title>
+    <link rel="stylesheet" href="editar.css">
+</head>
+<body>
+    <div class="container-edit">
+        <header class="header-edit">
+            <span class="back-btn-edit">❮</span>
+            <h1 style="margin-right: 170px;">Editar </h1>
+        </header>
+
+        <div class="content-edit">
+        
+            <form id="editProfessorForm">
+                <div class="section-edit">
+                    <h2>Dados Pessoais</h2>
+                    <label for="username">Nome de Usuário:</label>
+                    <input type="text" id="username" name="username" placeholder="Nome de Usuário" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" placeholder="CPF" required>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required>
+
+                    <label for="data_nascimento">Data de Nascimento:</label>
+                    <input type="date" id="data_nascimento" name="data_nascimento">
+                </div>
+
+                <div class="section-edit">
+                    <h2>Dados Credenciais</h2>
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" placeholder="Senha" required>
+                </div>
+
+                <div class="section-edit">
+                    <h2>Função no Sistema</h2>
+                    <label for="role">Função:</label>
+                    <select id="role" name="role" required>
+                        <option value="aluno">Aluno</option>
+                        <option value="professor">Professor</option>
+                        <option value="coordenador">Coordenador</option>
+                    </select>
+
+                    <label for="status">Status:</label>
+                    <select id="status" name="status" required>
+                        <option value="ativo">Ativo</option>
+                        <option value="inativo">Inativo</option>
+                    </select>
+                </div>
+
+                <div class="section-edit">
+                    <h2>Permissões</h2>
+                    <label for="permissions">Permissões:</label>
+                    <input type="text" id="permissions" name="permissions" placeholder="Permissões separadas por vírgula">
+                </div>
+
+                <button type="submit" class="edit-btn-edit">Salvar Alterações</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Função de exemplo para capturar os dados do formulário e enviá-los via uma API
+        document.getElementById('editProfessorForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const formData = {
+                username: document.getElementById('username').value,
+                email: document.getElementById('email').value,
+                cpf: document.getElementById('cpf').value,
+                telefone: document.getElementById('telefone').value,
+                password: document.getElementById('password').value,
+                role: document.getElementById('role').value,
+                status: document.getElementById('status').value,
+                permissions: document.getElementById('permissions').value.split(',')
+            };
+
+            console.log('Dados do formulário:', formData);
+        });
+    </script>
+</body>
+</html>

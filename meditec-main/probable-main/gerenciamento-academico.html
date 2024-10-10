@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento Acadêmico</title>
+    <link rel="stylesheet" href="Gerenciamento-Acadêmico.css">
+</head>
+<body>
+    <div class="container">
+
+        <header> 
+            <div class="logo">
+                <img src="img/logomediotec.png"> 
+            </div>
+            <h1>Gerenciamento Acadêmico - Coordenador</h1>
+        </header>
+       
+        <div class="actions">
+            <button onclick="window.location.href='painel-coordenador.html'" class="btn" >Voltar</button>
+            <button id="adicionarTurma" class="btn">Adicionar Nova Turma</button>
+        </div>
+
+        <!-- Tabela de Listagem de Turmas e Disciplinas -->
+        <table id="listagem" class="table-responsive">
+            <thead>
+                <tr>
+                    <th>Nome da Turma</th>
+                    <th>Disciplina</th>
+                    <th>Professor Associado</th>
+                    <th>Número de Alunos</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="listaItens">
+                <!-- As turmas serão carregadas dinamicamente -->
+            </tbody>
+        </table>
+
+        <!-- Formulário de Edição (Inicialmente oculto) -->
+        <div id="editForm" class="edit-form" style="display: none;">
+            <h2 class="texto">Editar turma</h2>
+            <form id="formEditar">
+                <label for="nomeTurma">Nome da Turma:</label>
+                <input type="text" id="nomeTurma" name="nomeTurma" required>
+                
+                <label for="disciplina">Disciplina:</label>
+                <input type="text" id="disciplina" name="disciplina" required>
+
+                <label for="professor">Professor Associado:</label>
+                <input type="text" id="professor" name="professor" required>
+
+                <label for="numAlunos">Número de Alunos:</label>
+                <input type="number" id="numAlunos" name="numAlunos" required>
+
+                <button type="submit" class="btn">Salvar Alterações</button>
+                <button type="button" id="cancelarEdicao" class="btn btn-cancel">Cancelar</button>
+            </form>
+        </div>
+
+        <!-- Formulário para Adicionar Nova Turma (Inicialmente oculto) -->
+        <div id="addForm" class="edit-form" style="display: none;">
+            <h2 class="texto">Adicionar nova turma</h2>
+            <form id="formAdicionar">
+                <label for="novoNomeTurma">Nome da Turma:</label>
+                <input type="text" id="novoNomeTurma" name="novoNomeTurma" required>
+                
+                <label for="novaDisciplina">Disciplina:</label>
+                <input type="text" id="novaDisciplina" name="novaDisciplina" required>
+
+                <label for="novoProfessor">Professor Associado:</label>
+                <input type="text" id="novoProfessor" name="novoProfessor" required>
+
+                <label for="novoNumAlunos">Número de Alunos:</label>
+                <input type="number" id="novoNumAlunos" name="novoNumAlunos" required>
+
+                <button type="submit" class="btn">Adicionar Turma</button>
+                <button type="button" id="cancelarAdicao" class="btn btn-cancel">Cancelar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="Gerenciamento-Acadêmico.js"></script>
+</body>
+</html>

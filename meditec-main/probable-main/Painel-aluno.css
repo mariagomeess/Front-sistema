@@ -1,0 +1,119 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Seção: Painel do Aluno */
+header {
+    background-color: #7d159d;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 195, 255, 0.926);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #eaeaea;
+
+}
+
+/* Estilos de Seções */
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+
+section h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #eaeaea;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+ul li strong {
+    font-size: 18px;
+    color: #333;
+}
+
+ul li p {
+    margin: 8px 0;
+    color: #555;
+}
+
+/* Botões para ações */
+button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button#ver-historico, button#voltar-conceitos {
+    margin-top: 10px;
+}
+
+/* Estilos da seção Comunicados */
+#comunicados-lista {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    ul li {
+        padding: 10px;
+    }
+
+    button {
+        padding: 8px 12px;
+    }
+}

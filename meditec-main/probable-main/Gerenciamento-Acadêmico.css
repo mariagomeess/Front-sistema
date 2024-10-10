@@ -1,0 +1,210 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff0fd;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #7d159d;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.logo img{
+    height: 80px;
+    margin-top: 5px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.actions .btn {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #00d5ff;
+    color: #7d159d;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.actions .btn:hover {
+    background-color: #FFAE00;
+}
+
+.table-responsive {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.table-responsive thead {
+    background-color: #7d159d;
+    color: white;
+}
+
+.table-responsive th, .table-responsive td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table-responsive td button {
+    padding: 5px 10px;
+    background-color: #00d5ff ;
+    color: #7d159d;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.table-responsive td button:hover {
+    background-color: #FFAE00;
+}
+
+.edit-form {
+    display: none; /* Esconde o formulário inicialmente */
+    padding: 20px;
+    margin-top: 20px;
+    align-items: center;
+    background-color:#ffffff;
+    flex-direction: column; /* Coloca os itens em coluna */
+    align-items: center; 
+    max-width: 600px; /* Define uma largura máxima para o formulário */
+    margin: 0 auto; /* Centraliza o formulário na tela */
+    color: #292F47;
+    font-weight: 600;
+
+}
+
+.texto{
+    text-align: center;
+    color: #7d159d;
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(18, 198, 18); /* Altere para a cor desejada */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: green;
+}
+
+.edit-form h2 {
+    margin-bottom: 15px;
+}
+
+.edit-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.edit-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border: none;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.175);
+    border-radius: 8px;
+    background-color: #ece9e4;
+}
+
+.btn-cancel {
+    background-color: #dc3545;
+}
+
+.btn-cancel:hover {
+    background-color: #c82333;
+}
+
+.edit-form button {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .table-responsive th, .table-responsive td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .table-responsive th, .table-responsive td {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .actions .btn {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+
+/* Reaproveitamento do CSS existente */
+
+/* Adicionar turma - Ocultar formulário inicialmente */
+#addForm {
+    display: none;
+}
+
+.edit-form {
+    display: none; /* Esconde ambos os formulários inicialmente */
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: blue; /* Altere para a cor desejada */
+    text-decoration: none;
+    border-radius: 5px;
+}

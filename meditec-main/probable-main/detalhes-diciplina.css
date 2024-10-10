@@ -1,0 +1,96 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos da seção Minhas Disciplinas */
+#minhas-disciplinas {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#disciplinas-lista {
+    list-style: none;
+}
+
+#disciplinas-lista li {
+    background-color: #eaeaea;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#disciplinas-lista li strong {
+    font-size: 18px;
+    color: #333;
+}
+
+#disciplinas-lista li p {
+    margin: 8px 0;
+    color: #555;
+}
+
+/* Botão para visualizar detalhes */
+button.ver-detalhes {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.ver-detalhes:hover {
+    background-color: #45a049;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    #disciplinas-lista li {
+        padding: 10px;
+    }
+
+    button.ver-detalhes {
+        padding: 8px 12px;
+    }
+}
+
+/* Estilo para o botão de voltar */
+button#voltar {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#voltar:hover {
+    background-color: #555;
+}

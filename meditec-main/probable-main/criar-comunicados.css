@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #fff0fd;
+}
+
+header {
+    background-color: #7d159d;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.logo img{
+    height: 80px;
+    margin-top: 5px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.actions button{
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #00d5ff;
+    color: #7d159d;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#novo-comunicado-btn {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #00d5ff;
+    color: #7d159d;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.bnt-voltar{
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #00d5ff;
+    color: #7d159d;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#novo-comunicado-btn:hover {
+    background-color: #FFAE00;
+}
+
+.bnt-voltar{
+    background-color: #FFAE00;
+}
+
+.actions button:hover{
+    background-color: #FFAE00;
+}
+
+h2 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00b336;
+}
+
+#cancelar-btn{
+    background-color: red;
+}
+
+#cancelar-btn:hover{
+    background-color: rgb(141, 32, 32);
+}
+
+.hidden {
+    display: none;
+}
+
+#formulario-comunicado, #confirmacao-exclusao {
+    margin-top: 20px;
+    
+}
+
+#comunicado-form{
+    padding: 20px;
+    margin-top: 20px;
+    display: flex; /* Utiliza flexbox */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    align-items: center; /* Centraliza os itens */
+    background-color: #ffffff;
+    max-width: 600px; /* Define uma largura máxima para o formulário */
+    margin: 0 auto; /* Centraliza o formulário na tela */
+    color: #292F47;
+    font-weight: 600; 
+}
+
+#comunicado-form label {
+    width: 100%; /* Garante que o label ocupe 100% da largura disponível */
+    margin-bottom: 5px;
+    text-align: left; /* Mantém o alinhamento do texto à esquerda */
+}
+
+#comunicado-form input, 
+#comunicado-form textarea {
+    width: 100%; /* Garante que o input e o textarea ocupem 100% da largura */
+    padding: 10px;
+    margin-bottom: 15px; /* Adiciona um espaçamento entre os campos */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #ece9e4;
+}
+
+#comunicado-form button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+tr{ 
+    color: #7d159d;
+}
+
+
+#comunicado-form button {
+    margin: 5px;
+    background-color: #21691b;
+    color: #ffffff;
+}
+
+#comunicado-form #cancelar-btn{
+    background-color: red;
+}

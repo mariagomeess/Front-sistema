@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(img/BackGround.png);
+    background-size: cover; /* Faz com que a imagem de fundo cubra 100% da área */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+.login-container {
+    background-color: #9D31BD;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-container h2{
+    text-align: center; /* Centralizar o texto e conteúdo */
+    margin-bottom: 1.5rem; /* Espaçamento abaixo do título */
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.logo img{
+    display: block;
+    margin: 0 auto 1rem; /* Centraliza a logo e adiciona espaçamento abaixo dela */
+    width: 150px; /* Ajuste o tamanho da logo, se necessário */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+select{
+    width: 90%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #ffffff; 
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos no width */
+    
+}
+
+input {
+    width: 90%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #f4f4f4;
+}
+
+button {
+    padding: 0.75rem;
+    background-color: #16D0F4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 50%; /* Tamanho menor do botão */
+    margin: 0 auto; /* Centraliza o botão */
+    display: block; /* Necessário para a centralização */
+
+}
+
+button:hover {
+    background-color: #FFAE00;
+}
+
+a {
+    text-align: center;
+    margin-top: 1rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

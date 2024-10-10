@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Comunicados</title>
+    <link rel="stylesheet" href="comunicados.css">
+</head>
+<body>
+    <header> 
+        <div class="logo">
+            <img src="img/logomediotec.png"> 
+        </div>
+        <h1>Listagem de Comunicados</h1>
+    </header>
+
+    <div class="actions">
+    <button onclick="window.location.href='painel-coordenador.html'" class="btn-voltar">Voltar</button>
+    <button id="novo-comunicado-btn">Criar Novo Comunicado</button>
+    </div>
+    <!-- Tabela para listar comunicados -->
+    <table>
+        <thead>
+            <tr>
+                <th>Título do Comunicado</th>
+                <th>Destinatários</th>
+                <th>Data de Envio</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="comunicados-lista">
+            <!-- Comunicados serão listados aqui -->
+        </tbody>
+    </table>
+
+    <!-- Formulário de criação/edição de comunicado -->
+    <div id="formulario-comunicado" class="hidden">
+        <form id="comunicado-form">
+            <label for="titulo">Título</label>
+            <input type="text" id="titulo" name="titulo" required>
+
+            <label for="destinatarios">Destinatários</label>
+            <input type="text" id="destinatarios" name="destinatarios" required>
+
+            <label for="descricao">Descrição</label>
+            <textarea id="descricao" name="descricao" required></textarea>
+
+            <label for="data">Data de Envio</label>
+            <input type="date" id="data" name="data" required>
+
+            <button type="submit">Salvar</button>
+            <button type="button" id="cancelar-btn">Cancelar</button>
+        </form>
+    </div>
+
+    <script src="comunicados.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Turmas</title>
+    <link rel="stylesheet" href="listagem-turmas.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logomediotec.png"> 
+        </div>
+        <h1>Minhas Turmas</h1>
+    </header>
+
+    
+    <div class="button-container">
+        <button onclick="window.location.href='painel-professor.html'" id="voltar">Voltar</button>
+    </div>
+    
+    <section id="turmas">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome da Turma</th>
+                    <th>Número de Alunos</th>
+                    <th>Disciplinas Associadas</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="turmas-lista">
+                <!-- As turmas serão carregadas via JavaScript -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="listagem-turmas.js"></script>
+</body>
+</html>

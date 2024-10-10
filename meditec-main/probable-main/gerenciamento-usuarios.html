@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Usuários</title>
+    <link rel="stylesheet" href="gerenciamento-usuarios.css"> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logomediotec.png"> 
+        </div>
+        <h1>Gerenciamento de Usuários</h1> 
+    </header>
+
+    
+    <div class="button-container">
+        <button onclick="window.location.href='painel-coordenador.html'" id="voltar-btn">Voltar</button>
+        <button id="novo-usuario-btn">Criar Novo Usuário</button>
+    </div>
+
+    <div id="formulario-usuario" class="hidden">
+        <form id="usuario-form">
+            <h2 id="titulo-formulario">Cadastro de Usuário</h2>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" required>
+
+            <label for="tipo-usuario">Tipo de Usuário:</label>
+            <select id="tipo-usuario" required>
+                <option value="aluno">Aluno</option>
+                <option value="professor">Professor</option>
+                <option value="coordenador">Coordenador</option>
+            </select>
+
+            <label for="status">Status:</label>
+            <select id="status" required>
+                <option value="ativo">Ativo</option>
+                <option value="inativo">Inativo</option>
+            </select>
+
+            <button type="submit" class="button2" id="salve-btn">Salvar</button>
+            <button type="button" class="button2"  id="cancelar-btn">Cancelar</button>
+        </form>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Tipo de Usuário</th>
+                <th>E-mail</th>
+                <th>Status</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="usuarios-lista">
+            <!-- Os usuários serão adicionados aqui dinamicamente -->
+        </tbody>
+    </table>
+
+    <script src="gerenciamento-usuarios.js"></script>
+</body>
+</html>
